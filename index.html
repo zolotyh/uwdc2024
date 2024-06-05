@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/csshake.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="dist/theme/white.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="preload"
+    href="./dist/theme/fonts/work/subset-YanoneKaffeesatz-ExtraLight.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin />
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>HTMX на практике</h1>
+        </section>
+        <section>
+          <table>
+            <tr>
+              <td style="vertical-align: middle">
+                <img style="height: 8em" src="img/logo.jpg" alt="">
+              </td>
+              <td style="vertical-align: middle">
+                Золотых Алексей
+                <br>
+                  @zolotyh
+                <br>
+                  Github | Telegram | Twitter
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <img style="height: 10em;" src="./img/logo.svg" alt="Лого МойОфис">
+        </section>
+        <section>
+          <img src="./img/holyjs.svg" alt="HolyJS">
+        </section>
+        <section>
+          <img src="./img/htmx.png" alt="">
+        </section>
+        <section>
+          <p class="r-fit-text">Зачем?!</p>
+        </section>
+        <section data-transition="none">
+          <img style="width: 35vw" src="./img/server.png" alt="">
+        </section>
+        <section data-transition="none">
+          <img style="width: 35vw" src="./img/server2.png" alt="">
+        </section>
+        <section>
+          <img src="./img/rendering.png" alt="">
+        </section>
+        <section data-transition="none">
+          <h2>React &mdash; функция render</h2>
+          <pre><code data-line-numbers data-trim data-noescape>
+const root = ReactDOM.createRoot(domRoot);
+root.render(&lt;h1&gt;Hello, world!&lt;/h1&gt;);
+          </code></pre>
+        </section>
+        <section>
+          <h2>Больше API хороших и надежных!</h2>
+          <img src="./img/api.png" alt="">
+        </section>
+        <section>
+          <h2>На сегодня</h2>
+          <ul>
+            <li class="fragment">JSON</li>
+            <li class="fragment">Рендеринг на клиенте</li>
+            <li class="fragment">Строим API</li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="r-fit-text">НО...</h2>
+        </section>         
+        <section>
+          <img src="./img/admin.png" alt="">
+        </section>
+        <section>
+          <h2>Про время и лишние запросы</h2>
+          <img src="./img/line.png" alt="">
+        </section>
+        <section>Про надежность и кол-во деталей</section>
+        <section>
+          <img src="./img/htmx-2.png" alt="">
+        </section>
+        <section>
+          <h2>Весь HTMX</h2>
+          <pre><code data-trim>
+&lt;script src=&quot;https://unpkg.com/htmx.org@1.9.11&quot;&gt;&lt;/script&gt;
+
+&lt;button
+      hx-post=&quot;/clicked&quot; 
+      hx-swap=&quot;outerHTML&quot;&gt;
+    Click Me
+&lt;/button&gt;
+          </code></pre>
+        </section>
+        <section>
+          <h2>Старый добрый серверный рендеринг</h2>
+<pre><code class="html" data-trim>
+{% extends &quot;base.html&quot; %}
+
+
+{% block content %}
+&lt;ul&gt;
+  {% for name, item in items %}
+  &lt;li&gt;{{ name }}: {{ item }}&lt;/li&gt;
+  {% endfor %}
+&lt;/ul&gt;
+{% endblock %}
+</code></pre>
+        </section>
+        <section>
+          Больше Ajax почти за бесплатно
+          <pre class="fragment"><code data-trim>
+&lt;div hx-boost=&quot;true&quot;&gt;
+  &lt;a href=&quot;/page1&quot;&gt;Go To Page 1&lt;/a&gt;
+  &lt;a href=&quot;/page2&quot;&gt;Go To Page 2&lt;/a&gt;
+&lt;/div&gt;
+          </code></pre>
+        </section>
+        <section>
+          <h2>Примеры с навигацией</h2>
+        </section>
+        <section>
+          <h2>Ленивость</h2>
+        </section>
+        <section data-background-video="./img/lazy.mp4"></section>
+        <section>
+          <pre><code data-trim>
+&lt;div hx-get=&quot;/graph&quot; 
+        hx-trigger=&quot;load&quot;&gt;
+  &lt;img class=&quot;htmx-indicator&quot;
+          src=&quot;/img/bars.svg&quot;/&gt;
+&lt;/div&gt;
+          </code></pre>
+          <pre><code data-trim>
+.htmx-settling img {
+  opacity: 0;
+}
+img {
+ transition: opacity 300ms ease-in;
+}
+          </code></pre>
+        </section>
+        <section>
+          Формы, и общие принципы
+        </section>
+        <section data-background-video="./img/edit.mp4">
+          
+        </section>
+        <section>
+          <h2>Начало</h2>
+          <pre><code data-trim>
+&lt;div hx-target=&quot;this&quot; hx-swap=&quot;outerHTML&quot;&gt;
+    &lt;div&gt;&lt;label&gt;First Name&lt;/label&gt;: Joe&lt;/div&gt;
+    &lt;div&gt;&lt;label&gt;Last Name&lt;/label&gt;: Blow&lt;/div&gt;
+    &lt;div&gt;&lt;label&gt;Email&lt;/label&gt;: joe@blow.com&lt;/div&gt;
+    &lt;button hx-get=&quot;/contact/1/edit&quot; class=&quot;btn btn-primary&quot;&gt;
+    Click To Edit
+    &lt;/button&gt;
+&lt;/div&gt;
+          </code></pre>
+        </section>
+        <section>
+<h2>GET /contact/1/edit</h2>
+<pre><code data-trim>
+  &lt;form hx-put=&quot;/contact/1&quot; hx-target=&quot;this&quot; hx-swap=&quot;outerHTML&quot;&gt;
+    ...
+    &lt;button class=&quot;btn&quot;&gt;Submit&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; hx-get=&quot;/contact/1&quot;&gt;Cancel&lt;/button&gt;
+  &lt;/form&gt;
+</code></pre>
+        </section>
+        <section>
+          <h2>PUT /contact/1</h2>
+          <pre><code>
+&lt;div hx-target=&quot;this&quot; hx-swap=&quot;outerHTML&quot;&gt;
+    &lt;div&gt;&lt;label&gt;First Name&lt;/label&gt;: Stachka&lt;/div&gt;
+    &lt;div&gt;&lt;label&gt;Last Name&lt;/label&gt;: Blow&lt;/div&gt;
+    &lt;div&gt;&lt;label&gt;Email&lt;/label&gt;: joe@blow.com&lt;/div&gt;
+    &lt;button hx-get=&quot;/contact/1/edit&quot; class=&quot;btn btn-primary&quot;&gt;
+    Click To Edit
+    &lt;/button&gt;
+&lt;/div&gt;
+          </code></pre>
+        </section>
+        <section>
+          Поиск, пагинация
+          <img src="./img/admin.png" alt="">
+        </section>
+        <section>
+          <h2>Весь поиск</h2>
+          <pre><code data-trim class="html">
+&lt;input id=&quot;search&quot; 
+       type=&quot;search&quot; 
+       name=&quot;q&quot; 
+       value=&quot;{{ request.args.get(&#39;q&#39;) or &#39;&#39; }}&quot;
+       hx-get=&quot;/contacts&quot;
+       hx-trigger=&quot;change, keyup delay:200ms changed&quot;
+       hx-target=&quot;tbody&quot;
+       hx-push-url=&quot;true&quot;/&gt;
+          </code></pre>
+        </section>
+        <section>
+          Если все-таки нужен React
+        </section>
+        <section>
+          WebSocket
+        </section>
+        <section>
+          <h2>
+            Недостатки
+          </h2>
+          <ul>
+            <li class="fragment">Для Fullstack</li>
+            <li class="fragment">Не для большой команды</li>
+            <li class="fragment">Нет API</li>
+            <li class="fragment">Http Attributes Hell</li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            Достоинства
+          </h2>
+          <ul>
+            <li class="fragment">Для Fullstack</li>
+            <li class="fragment">Не для большой команды</li>
+            <li class="fragment">Супербыстро</li>
+            <li class="fragment">Декларативно</li>
+            <li class="fragment">Нет сборки и мало JS</li>
+          </ul>
+        </section>
+        <section>
+          Выводы
+        </section>
+        <section>
+          <h2>Время вопросов</h2>
+          <p>Золотых Алексей: @zolotyh</p>
+        </section>
+      </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+    // More info about initialization & config:://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      backgroundTransition: 'none',
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+    });
+    </script>
+  </body>
+</html>
