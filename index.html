@@ -1,575 +1,611 @@
-<!DOCTYPE html>
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>reveal.js</title>
-<link rel="stylesheet" href="dist/reset.css">
-<link rel="stylesheet" href="dist/reveal.css">
-<link rel="stylesheet" href="dist/theme/white.css">
-<link rel="stylesheet" href="css/stylesheet.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<!-- Theme used for syntax highlighted code -->
-<link rel="stylesheet" href="./css/dracula.css">
-</head>
-<body>
+<!doctype html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/white.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="./css/dracula.css" />
+  </head>
+  <body>
     <div class="reveal">
-        <div class="slides">
-            <section data-me="true" data-background-color="#676B6B" data-transition="none" data-background-transition="none">
-                <h1  data-addclass="animate__animated animate__bounceInDown">Алексей Золотых</h1>
-                <p class="fragment fade-up">Инженер</p>
-                <p class="fragment fade-up">Тимлид</p>
-                <p class="fragment fade-up">Спикер</p>
-            </section>
-            <section>
-              <img src="./img/logo.svg" style="height: 50vh" alt="">
-            </section>
-            <section data-background-image="./img/myoffice.png" data-background-position="top">
-            </section>
-            <section>
-            <h2>Команда веб-редакторов</h2>
-            <img src="./img/office.png" alt="">
-            </section>
-            <section data-transition="none" data-background-transition="none">
-              <h1 style="font-weight: 200" class="r-fit-text"><b>HTM<span style="display: inline-block" class="animate__animated animate__tada animate__infinite">X</span></b> на практике</h1>
-            </section>
-            <section data-transition="none" data-background-transition="none">
-              <div class="r-stack">
-                <div class="animate__animated" data-addclass="animate__hinge">
-                  <h1 style="font-weight: 200" class="r-fit-text"><b>HTM<span style="display: inline-block" class="animate__animated animate__tada animate__infinite">X</span></b> на практике</h1>
-                </div>
-                <p class=" animate__fadeIn animate__delay-3s" data-addclass="animate__animated" style="font-size: 2em; font-weight: 400; text-transform: uppercase">Зачем мне еще одна библиотека?!</p>
-              </div>
-            </section>
-            <section data-background-color="#0f0f0f" data-transition="zoom" data-nik="true">
-                <h3 style="font-weight: 800" class="r-fit-text">Много причин</h3>
-            </section>
-            <section>
-            
-            </section>
-            <section>
-            <h2>Эксперимент</h2>
-            <ul>
-              <li>3G-Slow</li>
-              <li>2 почтовых клиента</li>
-              <li>Проверяем первоначальную загрузку</li>
-            </ul>
-            </section>
-            <section data-background-video="./video/1.mp4">
-            </section>
-            <section data-background-image="./img/maslenitsa.jpeg">
-              <h2 class="r-fit-text">Почему так медленно?</h2>
-            </section>
-            <section data-background="#222222" data-transition="none" >
-              <p>Почти любой SPA</p>
-              <img style="max-height: 80vh" src="./img/spa/1.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 80vh" src="./img/spa/2.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img  style="max-height: 80vh"src="./img/spa/3.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 80vh" src="./img/spa/4.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 80vh" src="./img/spa/5.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 80vh" src="./img/spa/6.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img  style="max-height: 80vh" src="./img/spa/7.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 80vh" src="./img/spa/8.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 80vh" src="./img/spa/9.svg" alt="">
-            </section>
-            <section data-background="#222222" data-background-image="./img/dodge.jpeg">
-               <h2 class="r-fit-text">Перформанс</h2>
-            </section>
-            <section>
-              Производительность ближе к экономии!
-            </section>
-            <section>
-            <h2>Пример</h2>
-            <div class="fragment">
-            <p>Что это такое?</p>
-            <p class="r-fit-text">0x5F3759DF</p>
+      <div class="slides">
+        <section
+          data-me="true"
+          data-background-color="#676b6b"
+          data-transition="none"
+          data-background-transition="none"
+        >
+          <h1 data-addclass="animate__animated animate__bounceindown">
+            алексей золотых
+          </h1>
+          <p class="fragment fade-up">инженер</p>
+          <p class="fragment fade-up">тимлид</p>
+          <p class="fragment fade-up">спикер</p>
+        </section>
+        <section>
+          <img src="./img/logo.svg" style="height: 50vh" alt="" />
+        </section>
+        <section
+          data-background-image="./img/myoffice.png"
+          data-background-position="top"
+        ></section>
+        <section>
+          <h2>команда веб-редакторов</h2>
+          <img src="./img/office.png" alt="" />
+        </section>
+        <section data-transition="none" data-background-transition="none">
+          <h1 style="font-weight: 200" class="r-fit-text">
+            <b
+              >htm<span
+                style="display: inline-block"
+                class="animate__animated animate__tada animate__infinite"
+                >x</span
+              ></b
+            >
+            на практике
+          </h1>
+        </section>
+        <section data-transition="none" data-background-transition="none">
+          <div class="r-stack">
+            <div class="animate__animated" data-addclass="animate__hinge">
+              <h1 style="font-weight: 200" class="r-fit-text">
+                <b
+                  >htm<span
+                    style="display: inline-block"
+                    class="animate__animated animate__tada animate__infinite"
+                    >x</span
+                  ></b
+                >
+                на практике
+              </h1>
             </div>
-            </section>
-            <section>
-            <p>
-             \[\begin{aligned}
-             \frac{1}{\sqrt x}
-  \end{aligned} \]
+            <p
+              class="animate__fadein animate__delay-3s"
+              data-addclass="animate__animated"
+              style="
+                font-size: 2em;
+                font-weight: 400;
+                text-transform: uppercase;
+              "
+            >
+              зачем мне еще одна библиотека?!
             </p>
-            <pre><code data-trim>
-float FastInvSqrt(float x) {
+          </div>
+        </section>
+        <section
+          data-background-color="#0f0f0f"
+          data-transition="zoom"
+          data-nik="true"
+        >
+          <h3 style="font-weight: 800" class="r-fit-text">много причин</h3>
+        </section>
+        <section></section>
+        <section>
+          <h2>эксперимент</h2>
+          <ul>
+            <li>3g-slow</li>
+            <li>2 почтовых клиента</li>
+            <li>проверяем первоначальную загрузку</li>
+          </ul>
+        </section>
+        <section data-background-video="./video/1.mp4"></section>
+        <section data-background-image="./img/maslenitsa.jpeg">
+          <h2 class="r-fit-text">почему так медленно?</h2>
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <p>почти любой spa</p>
+          <img style="max-height: 80vh" src="./img/spa/1.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 80vh" src="./img/spa/2.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 80vh" src="./img/spa/3.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 80vh" src="./img/spa/4.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 80vh" src="./img/spa/5.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 80vh" src="./img/spa/6.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 80vh" src="./img/spa/7.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 80vh" src="./img/spa/8.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 80vh" src="./img/spa/9.svg" alt="" />
+        </section>
+        <section
+          data-background="#222222"
+          data-background-image="./img/dodge.jpeg"
+        >
+          <h2 class="r-fit-text">перформанс</h2>
+        </section>
+        <section>производительность ближе к экономии!</section>
+        <section>
+          <h2>пример</h2>
+          <div class="fragment">
+            <p>что это такое?</p>
+            <p class="r-fit-text">0x5f3759df</p>
+          </div>
+        </section>
+        <section>
+          <p>\[\begin{aligned} \frac{1}{\sqrt x} \end{aligned} \]</p>
+          <pre><code data-trim>
+float fastinvsqrt(float x) {
   float xhalf = 0.5f * x;
-  int i = *(int*)&x;  // представим биты float в виде целого числа
-  i = 0x5f3759df - (i >> 1);  // какого черта здесь происходит ?
-  x = *(float*)&i;
+  int i = *(int*)&amp;x;  // представим биты float в виде целого числа
+  i = 0x5f3759df - (i &gt;&gt; 1);  // какого черта здесь происходит ?
+  x = *(float*)&amp;i;
   x = x*(1.5f-(xhalf*x*x));
   return x;
 }
             </code></pre>
-            </section>
-            <section>
-               <h2 class="r-fit-text">Ускорение в 4 раза</h2>
-               <img src="./img/quake.jpeg" style="height: 50vh" alt="">
-            </section>
-            <section>
-                <h3>Как работает</h3>
-                <p><a href="https://h14s.p5r.org/2012/09/0x5f3759df.html?mwh=1">h14s.p5r.org/2012/09/0x5f3759df.html?mwh=1</a></p>
-                <h3>Про сейчас</h3>
-                <p><a href="https://hllmn.net/blog/2023-04-20_rsqrt/">hllmn.net/blog/2023-04-20_rsqrt/</a></p>
-            </section>
-            <section>
-            <h2>Переводы</h2>
-              <a href="https://habr.com/ru/articles/730872/">habr.com/ru/articles/730872/</a>
-              <br>
-              <a href="https://habr.com/ru/companies/infopulse/articles/336110/">https://habr.com/ru/companies/infopulse/articles/336110/</a>
-            </section>
-            <section>&mdash; Раньше веб работал проще!</section>
-            <section>
-            <h2>
-            <strike>Старое говно</strike>&nbsp;Классика
-            </h2>
-            <div class="r-stack">
-               <div><img style="height: 50vh" src="./img/logo/rails.svg" alt=""></div>
-               <div  class="fragment"><img style="height: 50vh" src="./img/logo/django.svg" alt=""></div>
-               <div  class="fragment"><img style="height: 50vh" src="./img/logo/laravel.svg" alt=""></div>
-               <div  class="fragment"><img style="height: 50vh" src="./img/logo/spring.svg" alt=""></div>
+        </section>
+        <section>
+          <h2 class="r-fit-text">ускорение в 4 раза</h2>
+          <img src="./img/quake.jpeg" style="height: 50vh" alt="" />
+        </section>
+        <section>
+          <h3>как работает</h3>
+          <p>
+            <a href="https://h14s.p5r.org/2012/09/0x5f3759df.html?mwh=1"
+              >h14s.p5r.org/2012/09/0x5f3759df.html?mwh=1</a
+            >
+          </p>
+          <h3>про сейчас</h3>
+          <p>
+            <a href="https://hllmn.net/blog/2023-04-20_rsqrt/"
+              >hllmn.net/blog/2023-04-20_rsqrt/</a
+            >
+          </p>
+        </section>
+        <section>
+          <h2>переводы</h2>
+          <a href="https://habr.com/ru/articles/730872/"
+            >habr.com/ru/articles/730872/</a
+          >
+          <br />
+          <a href="https://habr.com/ru/companies/infopulse/articles/336110/"
+            >https://habr.com/ru/companies/infopulse/articles/336110/</a
+          >
+        </section>
+        <section>&mdash; раньше веб работал проще!</section>
+        <section>
+          <h2><strike>старое говно</strike>&nbsp;классика</h2>
+          <div class="r-stack">
+            <div>
+              <img style="height: 50vh" src="./img/logo/rails.svg" alt="" />
             </div>
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 70vh" src="./img/ssr/1.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 70vh" src="./img/ssr/2.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 70vh" src="./img/ssr/3.svg" alt="">
-            </section>
-            <section data-background="#222222" data-transition="none">
-              <img style="max-height: 70vh" src="./img/ssr/4.svg" alt="">
-            </section>
-            <section>
-            <h2 class="r-fit-text">
-              Browser ❤️ HTML
-            </h2>
-            </section>
-            <section>
-            <h2>Причины</h2>
-            <ol>
-              <li>Тормозной интерфейс</li>
-              <li><span class="fragment">Все нужно делать 2 раза</span></li>
-            </ol>
-            </section>
-            <section>
-            <h2>Все нужно делать 2 раза</h2>
-            <ul>
-              <li>Проверки</li>
-              <li>Логика</li>
-              <li>Эксплуатация</li>
-              <li>Рендеринг</li>
-            </ul>
-            </section>
-<!-- This is a comment 
-            <section>
-              <h2>
-                С чего все началось?
-              </h2>
-            </section>
-            <section>
-               <h2>Мы ушли в сторону SPA</h2>
-               <pre><code data-trim class="js"  data-line-numbers="1-7|1-3|5-7">
-// событие
-$(".js-button")
-  .on("click", function(){})
-
-// меняем DOM
-$("body")
-  .html('<button class="js-button">Нажми меня</button>')
-               </code></pre>
-            </section>
-            <section>
-              <h2>Новое API</h2>
-              <ul>
-                <li>History API</li>
-                <li>Element: closest() method</li>
-                <li>Dataset</li>
-              </ul>
-            </section>
-            <section>
-              <h2>Браузере стали быстрее</h2>
--->
-            </section>
-            <section>
-            <img src="./img/hotwire.png" alt="">
-            </section>
-            <section>
-            С чего начать?
-            </section>
-            <section data-transition="none">
-            <h3>Одна строка в &lt;head&gt;</h3>
-            <pre><code data-trim>
+            <div class="fragment">
+              <img style="height: 50vh" src="./img/logo/django.svg" alt="" />
+            </div>
+            <div class="fragment">
+              <img style="height: 50vh" src="./img/logo/laravel.svg" alt="" />
+            </div>
+            <div class="fragment">
+              <img style="height: 50vh" src="./img/logo/spring.svg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 70vh" src="./img/ssr/1.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 70vh" src="./img/ssr/2.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 70vh" src="./img/ssr/3.svg" alt="" />
+        </section>
+        <section data-background="#222222" data-transition="none">
+          <img style="max-height: 70vh" src="./img/ssr/4.svg" alt="" />
+        </section>
+        <section>
+          <h2 class="r-fit-text">browser ❤️ html</h2>
+        </section>
+        <section>
+          <h2>причины</h2>
+          <ol>
+            <li>тормозной интерфейс</li>
+            <li><span class="fragment">все нужно делать 2 раза</span></li>
+          </ol>
+        </section>
+        <section>
+          <h2>все нужно делать 2 раза</h2>
+          <ul>
+            <li>проверки</li>
+            <li>логика</li>
+            <li>эксплуатация</li>
+            <li>рендеринг</li>
+          </ul>
+        </section>
+        <section>
+          <img src="./img/hotwire.png" alt="" />
+        </section>
+        <section>с чего начать?</section>
+        <section data-transition="none">
+          <h3>одна строка в &lt;head&gt;</h3>
+          <pre><code data-trim>
 <script src="/js/turbo.es2017-umd.js"></script>
             </code></pre>
-            </section>
-            <section data-transition="none">
-            <p>В моем случае</p>
-            <pre><code data-trim>
+        </section>
+        <section data-transition="none">
+          <p>в моем случае</p>
+          <pre><code data-trim>
 <script src="/js/turbo.es2017-umd.js"></script>
             </code></pre>
-            </section>
-            <section data-transition="none">
-            <p>В моем случае</p>
-            <pre><code data-trim data-line-numbers="2">
+        </section>
+        <section data-transition="none">
+          <p>в моем случае</p>
+          <pre><code data-trim data-line-numbers="2">
 &lt;script src=&quot;/js/turbo.es2017-umd.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;/js/stimulus.umd.min.js&quot;&gt;&lt;/script&gt;
             </code></pre>
-            </section>
-            <section data-transition="none">
-            <p>В моем случае</p>
-            <pre><code data-trim data-line-numbers="3,4">
+        </section>
+        <section data-transition="none">
+          <p>в моем случае</p>
+          <pre><code data-trim data-line-numbers="3,4">
 <script src="/js/turbo.es2017-umd.js"></script>
 <script src="/js/stimulus.umd.min.js"></script>
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/bootstrap.bundle.min.js"></script>
             </code></pre>
-            </section>
-            <section>
-            <h2>
-              А где сборка?!
-            </h2>
-            </section>
-            <section>
-            <p>Что с размерами?</p>
-            <table class="fragment">
+        </section>
+        <section>
+          <h2>а где сборка?!</h2>
+        </section>
+        <section>
+          <p>что с размерами?</p>
+          <table class="fragment">
             <tr>
-              <th>Несжато</th>
-              <td>128K</td>
+              <th>несжато</th>
+              <td>128k</td>
             </tr>
             <tr>
-              <th>Terser</th>
-              <td>84K</td>
+              <th>terser</th>
+              <td>84k</td>
             </tr>
             <tr>
-              <th>Brotli -9</th>
-              <td>20K</td>
+              <th>brotli -9</th>
+              <td>20k</td>
             </tr>
-            </table>
-            <p class="fragment">Все вместе с Brotli - 80K</p>
-            </section>
-            <section>
-              <p>&mdash; Сбока не нужна!</p>
-              <p class="fragment">&mdash; Ради этого все и затевалось!</p>
-            </section>
-            <section>
-               <h2>Из чего состоит</h2>
-               <ul>
-                <li>Drive</li>
-                <li>Frame</li>
-                <li>Stream</li>
-                <li>Stimulus</li>
-               </ul>
-            </section>
-            <section data-background="#222222">
-            <h2 class="r-fit-text" data-addclass="animate__animated animate__flipInY">Turbo Dr<span style = "display: inline-block" class="animate__animated animate__heartBeat  animate__delay-1s animate__repeat-3" >i</span>ve</h2>
-            </section>
-            <section>
-            2 страницы
-            </section>
-            <section data-transition="none">
-<p>Список статей</p>
-<pre><code data-trim data-line-numbers="1-11|7-9|8">
-&lt;!DOCTYPE html&gt;
+          </table>
+          <p class="fragment">все вместе с brotli - 80k</p>
+        </section>
+        <section>
+          <p>&mdash; сбока не нужна!</p>
+          <p class="fragment">&mdash; ради этого все и затевалось!</p>
+        </section>
+        <section>
+          <h2>из чего состоит</h2>
+          <ul>
+            <li>drive</li>
+            <li>frame</li>
+            <li>stream</li>
+            <li>stimulus</li>
+          </ul>
+        </section>
+        <section data-background="#222222">
+          <h2
+            class="r-fit-text"
+            data-addclass="animate__animated animate__flipiny"
+          >
+            turbo dr<span
+              style="display: inline-block"
+              class="animate__animated animate__heartbeat animate__delay-1s animate__repeat-3"
+              >i</span
+            >ve
+          </h2>
+        </section>
+        <section>2 страницы</section>
+        <section data-transition="none">
+          <p>список статей</p>
+          <pre><code data-trim data-line-numbers="1-11|7-9|8">
+&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-  &lt;title&gt;Main&lt;/title&gt;
+  &lt;title&gt;main&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
    &lt;header&gt;...&lt;/header&gt;
-   &lt;main class=&quot;Main&quot;&gt;...&lt;/div&gt;
+   &lt;main class=&quot;main&quot;&gt;...&lt;/div&gt;
    &lt;footer&gt;...&lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-            </section>
-            <section data-transition="none">
-<p>Статья</p>
-<pre><code data-trim data-line-numbers="1-11|4|8">
-&lt;!DOCTYPE html&gt;
+        </section>
+        <section data-transition="none">
+          <p>статья</p>
+          <pre><code data-trim data-line-numbers="1-11|4|8">
+&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-  &lt;title&gt;Article&lt;/title&gt;
+  &lt;title&gt;article&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
    &lt;header&gt;...&lt;/header&gt;
-   &lt;main class=&quot;Article&quot;&gt;...&lt;/main&gt;
+   &lt;main class=&quot;article&quot;&gt;...&lt;/main&gt;
    &lt;footer&gt;...&lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-            </section>
-            <section data-transition="none">
-<p>Список статей</p>
-<pre><code data-trim data-line-numbers="5|10">
-&lt;!DOCTYPE html&gt;
+        </section>
+        <section data-transition="none">
+          <p>список статей</p>
+          <pre><code data-trim data-line-numbers="5|10">
+&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-  &lt;title&gt;Main&lt;/title&gt;
+  &lt;title&gt;main&lt;/title&gt;
   &lt;script src=&quot;hotwire.turbo.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
    &lt;header&gt;...&lt;/header&gt;
-     &lt;main class=&quot;Main&quot;&gt;
-      &lt;a href=&quot;/article&quot;&gt;Cтатья&lt;/a&gt;
+     &lt;main class=&quot;main&quot;&gt;
+      &lt;a href=&quot;/article&quot;&gt;cтатья&lt;/a&gt;
      &lt;/div&gt;
    &lt;footer&gt;...&lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-            </section>
-            <section data-transition="none">
-<p>По нажатию</p>
-<pre><code data-trim data-line-numbers="4,8-12">
-&lt;!DOCTYPE html&gt;
+        </section>
+        <section data-transition="none">
+          <p>по нажатию</p>
+          <pre><code data-trim data-line-numbers="4,8-12">
+&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-  &lt;title&gt;Main&lt;/title&gt;
+  &lt;title&gt;main&lt;/title&gt;
   &lt;script src=&quot;hotwire.turbo.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
    &lt;header&gt;...&lt;/header&gt;
-     &lt;main class=&quot;Main&quot;&gt;
-      &lt;a href=&quot;/article&quot;&gt;Cтатья&lt;/a&gt;
+     &lt;main class=&quot;main&quot;&gt;
+      &lt;a href=&quot;/article&quot;&gt;cтатья&lt;/a&gt;
      &lt;/div&gt;
    &lt;footer&gt;...&lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-            </section>
-            <section data-transition="none">
-<p>По нажатию</p>
-<pre><code data-trim data-line-numbers="4,8-10">
-&lt;!DOCTYPE html&gt;
+        </section>
+        <section data-transition="none">
+          <p>по нажатию</p>
+          <pre><code data-trim data-line-numbers="4,8-10">
+&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-  &lt;title&gt;Article&lt;/title&gt;
+  &lt;title&gt;article&lt;/title&gt;
   &lt;script src=&quot;hotwire.turbo.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
    &lt;header&gt;...&lt;/header&gt;
-   &lt;main class=&quot;Article&quot;&gt;...&lt;/main&gt;
+   &lt;main class=&quot;article&quot;&gt;...&lt;/main&gt;
    &lt;footer&gt;...&lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-            </section>
-            <section data-transition="none">
-<p>Если нужно, добавятся скрипты и стили</p>
-<pre><code data-trim data-line-numbers="6-7">
-&lt;!DOCTYPE html&gt;
+        </section>
+        <section data-transition="none">
+          <p>если нужно, добавятся скрипты и стили</p>
+          <pre><code data-trim data-line-numbers="6-7">
+&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-  &lt;title&gt;Article&lt;/title&gt;
+  &lt;title&gt;article&lt;/title&gt;
   &lt;script src=&quot;hotwire.turbo.js&quot;&gt;&lt;/script&gt;
   &lt;script&gt;alert(&#39;from head of item&#39;)&lt;/script&gt;
   &lt;style&gt;body::after {content: &quot;from style with after&quot;}&lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
    &lt;header&gt;...&lt;/header&gt;
-   &lt;main class=&quot;Article&quot;&gt;...&lt;/main&gt;
+   &lt;main class=&quot;article&quot;&gt;...&lt;/main&gt;
    &lt;footer&gt;...&lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-            </section>
-            <section>Демо</section>
-            <section data-background-video="./video/browser.mov"></section>
-            <section>Добавил Turbo!</section>
-            <section data-background-video="./video/drive.mov"></section>
-            <section data-background="#000">
-              <h2 class="r-fit-text" data-addclass="animate__animated animate__bounce">Turbo Frame</h2>
-            </section>
-            <section>
-            <h2>Как iframe, только на JS</h2>
-            </section>
-            <section>
-            <p>/forms/list</p>
-            <pre><code data-trim>
+        </section>
+        <section>демо</section>
+        <section data-background-video="./video/browser.mov"></section>
+        <section>добавил turbo!</section>
+        <section data-background-video="./video/drive.mov"></section>
+        <section data-background="#000">
+          <h2
+            class="r-fit-text"
+            data-addclass="animate__animated animate__bounce"
+          >
+            turbo frame
+          </h2>
+        </section>
+        <section>
+          <h2>как iframe, только на js</h2>
+        </section>
+        <section>
+          <p>/forms/list</p>
+          <pre><code data-trim>
 ...
 &lt;turbo-frame id=&quot;items&quot;&gt;
   &lt;ul id=&quot;list&quot;&gt;
-    &lt;li id=&quot;item1&quot;&gt;Товар 1 &lt;a href=&quot;/forms/edit/1&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
-    &lt;li id=&quot;item2&quot;&gt;Товар 2 &lt;a href=&quot;/forms/edit/2&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
-    &lt;li id=&quot;item3&quot;&gt;Товар 3 &lt;a href=&quot;/forms/edit/3&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li id=&quot;item1&quot;&gt;товар 1 &lt;a href=&quot;/forms/edit/1&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li id=&quot;item2&quot;&gt;товар 2 &lt;a href=&quot;/forms/edit/2&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li id=&quot;item3&quot;&gt;товар 3 &lt;a href=&quot;/forms/edit/3&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/turbo-frame&gt;
 ...
             </code></pre>
-            </section>
-            <section data-transition="none">
-              <p>/forms/edit/1</p>
-              <pre><code data-trim data-line-numbers="1-12|1|2|4-7|8-10">
+        </section>
+        <section data-transition="none">
+          <p>/forms/edit/1</p>
+          <pre><code data-trim data-line-numbers="1-12|1|2|4-7|8-10">
 &lt;turbo-frame id=&quot;item1&quot; &gt;
   &lt;form action=&quot;/forms/edit/1&quot; method=&quot;post&quot;&gt;
 
-    &lt;label&gt;Название&lt;/label&gt;
+    &lt;label&gt;название&lt;/label&gt;
     &lt;input type=&quot;text&quot;
           name=&quot;title&quot;
-          value=&quot;{{currentMr.title }}&quot;/&gt;
+          value=&quot;{{currentmr.title }}&quot;/&gt;
     &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;
-       Сохранить
+       сохранить
     &lt;/button&gt;
   &lt;/form&gt;
 &lt;/turbo-frame&gt;
               </code></pre>
-
-            </section>
-            <section data-transition="none">
-            <section>
-              <p>После POST /forms/edit/1</p>
-              <pre><code data-trim data-line-numbers="2-13">
+        </section>
+        <section data-transition="none">
+          <section>
+            <p>после post /forms/edit/1</p>
+            <pre><code data-trim data-line-numbers="2-13">
 &lt;turbo-frame id=&quot;item1&quot; &gt;
   &lt;form action=&quot;/forms/edit/1&quot; method=&quot;post&quot;&gt;
-    &lt;label&gt;Название&lt;/label&gt;
+    &lt;label&gt;название&lt;/label&gt;
     &lt;input type=&quot;text&quot;
           name=&quot;title&quot;
-          value=&quot;{{currentMr.title }}&quot;/&gt;
+          value=&quot;{{currentmr.title }}&quot;/&gt;
 
-    <p>Ошибка сохранения!!!</p>
+    &lt;p&gt;ошибка сохранения!!!&lt;/p&gt;
 
     &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;
-       Сохранить
+       сохранить
     &lt;/button&gt;
   &lt;/form&gt;
 &lt;/turbo-frame&gt;
               </code></pre>
-            </section>
-            <section data-background-video="./video/frame.mov"></section>
-            </section>
-            <section data-background-video="./video/frame3.mov">
-            </section>
-            <section data-transition="none">
-               <h3>Если на странице много данных...</h3>
-               <img src="./img/habr1.png" alt="">
-            </section>
-            <section data-transition="none">
-               <h3>Если на странице много данных...</h3>
-               <img src="./img/habr2.png" alt="">
-            </section>
-            <section>
-            <p>Нам поможет src</p>
-            <pre><code data-trim>
+          </section>
+          <section data-background-video="./video/frame.mov"></section>
+        </section>
+        <section data-background-video="./video/frame3.mov"></section>
+        <section data-transition="none">
+          <h3>если на странице много данных...</h3>
+          <img src="./img/habr1.png" alt="" />
+        </section>
+        <section data-transition="none">
+          <h3>если на странице много данных...</h3>
+          <img src="./img/habr2.png" alt="" />
+        </section>
+        <section>
+          <p>нам поможет src</p>
+          <pre><code data-trim>
 &lt;turbo-frame id=&quot;set_aside_tray&quot; src=&quot;...&quot;&gt;
   &lt;img src=&quot;/icons/spinner.gif&quot;&gt;
 &lt;/turbo-frame&gt;
             </code></pre>
-            <div class="fragment">
-            <p>Лень - двигатель прогресса</p>
+          <div class="fragment">
+            <p>лень - двигатель прогресса</p>
             <pre><code data-trim>
 &lt;turbo-frame id=&quot;set_aside_tray&quot; loading=&quot;lazy&quot; src=&quot;...&quot;&gt;
   &lt;img src=&quot;/icons/spinner.gif&quot;&gt;
 &lt;/turbo-frame&gt;
             </code></pre>
-            </div>
-            </section>
-            <section data-background-video="./video/frames2.mov">
-              
-            </section>
-            <section>
-            Побег из turbo-frame
-            <pre><code data-trim data-line-numbers="1-11|3-5|7-10">
+          </div>
+        </section>
+        <section data-background-video="./video/frames2.mov"></section>
+        <section>
+          побег из turbo-frame
+          <pre><code data-trim data-line-numbers="1-11|3-5|7-10">
 &lt;turbo-frame id=&quot;message_1&quot;&gt;
     ...
     &lt;a href=&quot;/messages/1/edit&quot;&gt;
-      Edit this message (within the current frame)
+      edit this message (within the current frame)
     &lt;/a&gt;
 
     &lt;a href=&quot;/messages/1/permission&quot; 
           data-turbo-frame=&quot;_top&quot;&gt;
-      Change permissions (replace the whole page)
+      change permissions (replace the whole page)
     &lt;/a&gt;
 &lt;/turbo-frame&gt;
             </code></pre>
-            </section>
-            <section>
-<p>Не пишем в историю</p>
-            <pre><code data-trim>
-&lt;a href=&quot;/edit&quot; data-turbo-action=&quot;replace&quot;&gt;Edit&lt;/a&gt;
+        </section>
+        <section>
+          <p>не пишем в историю</p>
+          <pre><code data-trim>
+&lt;a href=&quot;/edit&quot; data-turbo-action=&quot;replace&quot;&gt;edit&lt;/a&gt;
             </code></pre>
-            <p>Не GET единым</p>
+          <p>не get единым</p>
           <pre><code data-trim>
 &lt;a href=&quot;/articles/54&quot; data-turbo-method=&quot;delete&quot;&gt;
-  Delete the article
+  delete the article
 &lt;/a&gt;
           </code></pre>
-            </section>
-            <section>
-            <h3>Hotwire API</h3>
-            <pre><code data-trim>
-Turbo.visit(location)
-Turbo.visit(location, { action: action })
-Turbo.visit(location, { frame: frame })
+        </section>
+        <section>
+          <h3>hotwire api</h3>
+          <pre><code data-trim>
+turbo.visit(location)
+turbo.visit(location, { action: action })
+turbo.visit(location, { frame: frame })
             </code></pre>
-            <pre class="fragment"><code data-trim>
-elem.addEventListener('change', 
-    (e) => Turbo.visit(`?search=${e.value}`))
+          <pre class="fragment"><code data-trim>
+elem.addeventlistener('change', 
+    (e) => turbo.visit(`?search=${e.value}`))
             </code></pre>
-            </section>
-            <section>
-            <h3>Почему это удобно?</h3>
-            <pre class="fragment"><code data-trim>
+        </section>
+        <section>
+          <h3>почему это удобно?</h3>
+          <pre class="fragment"><code data-trim>
 from django.db import models
 
-class Person(models.Model):
-    first_name = models.CharField(max_length=30)
+class person(models.model):
+    first_name = models.charfield(max_length=30)
     ...
 
-class PersonForm(ModelForm):
-    class Meta:
-        model = Person
+class personform(modelform):
+    class meta:
+        model = person
         fields = ["first_name", ...]
             </code></pre>
-            <div class="fragment">
-            <h3>В шаблоне</h3>
+          <div class="fragment">
+            <h3>в шаблоне</h3>
             <pre><code data-trim>
 &lt;form method=&quot;post&quot;&gt;
    {% csrf_token %}
    {{ form.as_p }}
-   &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+   &lt;button type=&quot;submit&quot;&gt;submit&lt;/button&gt;
 &lt;/form&gt;
             </code></pre>
-            </div>
-            </section>
-            <section data-background="#000">
-            <h2 class="r-fit-text" data-addclass="animate__animated animate__flipInY">
-            Turbo Stream<span style="display: inline-block" class="animate__animated animate__heartBeat  animate__delay-1s animate__repeat-3">s</span>
-            </h2>
-            </section>
-            <section>
-            <p>Немного JavaScript для веб сокетов</p>
-<pre><code data-trim>
-Turbo.connectStreamSource(
-  new WebSocket("ws://" + document.location.host + "/ws")
+          </div>
+        </section>
+        <section data-background="#000">
+          <h2
+            class="r-fit-text"
+            data-addclass="animate__animated animate__flipiny"
+          >
+            turbo stream<span
+              style="display: inline-block"
+              class="animate__animated animate__heartbeat animate__delay-1s animate__repeat-3"
+              >s</span
+            >
+          </h2>
+        </section>
+        <section>
+          <p>немного javascript для веб сокетов</p>
+          <pre><code data-trim>
+turbo.connectstreamsource(
+  new websocket("ws://" + document.location.host + "/ws")
 );
 </code></pre>
-либо вместе с ответом из формы
-<pre><code data-trim>
-Mimetype: text/vnd.turbo-stream.html
+          либо вместе с ответом из формы
+          <pre><code data-trim>
+mimetype: text/vnd.turbo-stream.html
 </code></pre>
-            </section>
-            <section>
-            <h3>На сервере</h3>
-            <pre><code data-trim data-line-numbers="1-10|1|5-8">
+        </section>
+        <section>
+          <h3>на сервере</h3>
+          <pre><code data-trim data-line-numbers="1-10|1|5-8">
 fastify.get("/ws", { websocket: true }, async function (socket, request) {
   let counter = 0;
-  setInterval(() => {
+  setinterval(() => {
     socket.send(
       `&lt;turbo-stream action=&quot;append&quot; target=&quot;notifications&quot;&gt;
           &lt;template&gt;${counter++}&lt;/template&gt;
@@ -578,131 +614,161 @@ fastify.get("/ws", { websocket: true }, async function (socket, request) {
   }, 1000);
 });
             </code></pre>
-            <h3>В браузере</h3>
-            <pre><code data-trim>
+          <h3>в браузере</h3>
+          <pre><code data-trim>
             &lt;div id=&quot;notifications&quot;&gt;&lt;/div&gt;
             </code></pre>
-            </section>
-            <section data-background-video="./video/streams2.mov">
-            </section >
-            <section data-background="#000">
-            <h2 class="r-fit-text" data-addclass="animate_animated animate__jackInTheBox">Stimulus</h2>
-            <p>Щепотка JS для запаха</p>
-            </section>
-            <section>
-            <h3>HTML</h3>
-            <pre><code data-trim data-line-numbers="1-10|1|2,8|4-6">
+        </section>
+        <section data-background-video="./video/streams2.mov"></section>
+        <section data-background="#000">
+          <h2
+            class="r-fit-text"
+            data-addclass="animate_animated animate__jackinthebox"
+          >
+            stimulus
+          </h2>
+          <p>щепотка js для запаха</p>
+        </section>
+        <section>
+          <h3>html</h3>
+          <pre><code data-trim data-line-numbers="1-10|1|2,8|4-6">
 &lt;div data-controller=&quot;hello&quot;&gt;
   &lt;input data-hello-target=&quot;name&quot; type=&quot;text&quot;&gt;
 
   &lt;button data-action=&quot;click-&gt;hello#greet&quot;&gt;
-    Greet
+    greet
   &lt;/button&gt;
 
   &lt;span data-hello-target=&quot;output&quot;&gt;
   &lt;/span&gt;
 &lt;/div&gt;
             </code></pre>
-            </section>
-            <section>
-            <h3>JS</h3>
-            <pre><code data-trim>
-export default class extends Stimulus.Controller {
+        </section>
+        <section>
+          <h3>js</h3>
+          <pre><code data-trim>
+export default class extends stimulus.controller {
   static targets = [ "name", "output" ]
 
   greet() {
-    this.outputTarget.textContent =
-      `Hello, ${this.nameTarget.value}!`
+    this.outputtarget.textcontent =
+      `hello, ${this.nametarget.value}!`
   }
 }
             </code></pre>
-            <img src="./img/hello_dump.png" alt="">
-            </section>
-            <section>
-             Никто не мешает встроить реакт, если очень нужно
-             <pre><code data-trim>
+          <img src="./img/hello_dump.png" alt="" />
+        </section>
+        <section>
+          никто не мешает встроить реакт, если очень нужно
+          <pre><code data-trim>
 &lt;script&gt;
-  const root = ReactDOM
-    .createRoot(document.getElementById('root'));
+  const root = reactdom
+    .createroot(document.getelementbyid('root'));
 
   root.render(
-    React.createElement(Hello, {toWhat: 'World'}, null)
+    react.createelement(hello, {towhat: 'world'}, null)
   );
 &lt;/script&gt;
              </code></pre>
-            </section>
-            <section>
-            <h2>
-            Итого:
-            </h2>
-            <ul>
-              <li class="fragment">Drive для динамики</li>
-              <li class="fragment">Frame для навигации и форм</li>
-              <li class="fragment">Stream для обновлений</li>
-              <li class="fragment">Stimulus для связки</li>
-            </ul>
-            </section>
-            <section>
-<h3>Вывод:</h3>
-<p>попробовать точно стоит, про использование на работе думайте сами</p>
-            </section>
-            <section data-nik=true>
-              <p class="r-fit-text">Алексей Золотых: @zolotyh</p>
-              <img src="./img/qr.jpg" style="height: 30vh" alt="">
-              <p>Спасибо!</p>
-            </section>
-        </div>
+        </section>
+        <section>
+          <h2>итого:</h2>
+          <ul>
+            <li class="fragment">drive для динамики</li>
+            <li class="fragment">frame для навигации и форм</li>
+            <li class="fragment">stream для обновлений</li>
+            <li class="fragment">stimulus для связки</li>
+          </ul>
+        </section>
+        <section>
+          <h3>вывод:</h3>
+          <p>
+            попробовать точно стоит, про использование на работе думайте сами
+          </p>
+        </section>
+        <section data-nik="true">
+          <p class="r-fit-text">алексей золотых: @zolotyh</p>
+          <img src="./img/qr.jpg" style="height: 30vh" alt="" />
+          <p>спасибо!</p>
+        </section>
+      </div>
     </div>
-    <img class="js-me animate__slideInUp"  src="./img/me.png" alt="speaker photo"  style="height: 70vh; position: fixed; bottom: 0; right: 50%; display: none">
-    <img class="js-nik animate__slideInRight"  src="./img/nikolaev.png" alt="speaker photo"  style="height: 70vh; position: fixed; bottom: 0; right: 0%; display: none ">
+    <img
+      class="js-me animate__slideinup"
+      src="./img/me.png"
+      alt="speaker photo"
+      style="
+        height: 70vh;
+        position: fixed;
+        bottom: 0;
+        right: 50%;
+        display: none;
+      "
+    />
+    <img
+      class="js-nik animate__slideinright"
+      src="./img/nikolaev.png"
+      alt="speaker photo"
+      style="height: 70vh; position: fixed; bottom: 0; right: 0%; display: none"
+    />
     <script src="dist/reveal.js"></script>
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
     <script src="plugin/math/math.js"></script>
     <script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-			});
+      // more info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      reveal.initialize({
+        hash: true,
+        // learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          revealmarkdown,
+          revealhighlight,
+          revealnotes,
+          revealmath.katex,
+        ],
+      });
 
-      Reveal.on( 'slidechanged', event => {
-        const image = document.querySelector('.js-me');
-        const showImage = event.currentSlide.dataset['me']
-        image.style.display = showImage ? 'block': 'none'
-        if(showImage){
-          image.classList.add('animate__animated')
+      reveal.on("slidechanged", (event) => {
+        const image = document.queryselector(".js-me");
+        const showimage = event.currentslide.dataset["me"];
+        image.style.display = showimage ? "block" : "none";
+        if (showimage) {
+          image.classlist.add("animate__animated");
         } else {
-          image.classList.remove('animate__animated')
+          image.classlist.remove("animate__animated");
         }
       });
 
-      Reveal.on( 'slidechanged', event => {
-        const image = document.querySelector('.js-nik');
-        const showImage = event.currentSlide.dataset['nik']
-        image.style.display = showImage ? 'block': 'none'
-        if(showImage){
-          image.classList.add('animate__animated')
+      reveal.on("slidechanged", (event) => {
+        const image = document.queryselector(".js-nik");
+        const showimage = event.currentslide.dataset["nik"];
+        image.style.display = showimage ? "block" : "none";
+        if (showimage) {
+          image.classlist.add("animate__animated");
         } else {
-          image.classList.remove('animate__animated')
+          image.classlist.remove("animate__animated");
         }
       });
-      
-      Reveal.on( 'slidechanged', event => {
-        event.previousSlide?.querySelectorAll('[data-addclass]').forEach( el => {
-          const classNames = el.dataset['addclass'].split(' ')
-          el.classList.remove(...classNames)
-        });
-        event.currentSlide.querySelectorAll('[data-addclass]').forEach( el => { 
-          const delay = el.dataset['addclassDelay']
-          const classNames = el.dataset['addclass'].split(' ')
-          setTimeout(() => el.classList.add(...classNames), delay ? parseInt(delay, 10): 0)
+
+      reveal.on("slidechanged", (event) => {
+        event.previousslide
+          ?.queryselectorall("[data-addclass]")
+          .foreach((el) => {
+            const classnames = el.dataset["addclass"].split(" ");
+            el.classlist.remove(...classnames);
+          });
+        event.currentslide.queryselectorall("[data-addclass]").foreach((el) => {
+          const delay = el.dataset["addclassdelay"];
+          const classnames = el.dataset["addclass"].split(" ");
+          settimeout(
+            () => el.classlist.add(...classnames),
+            delay ? parseint(delay, 10) : 0,
+          );
         });
       });
-   </script>
-</body>
+    </script>
+  </body>
 </html>
