@@ -56,6 +56,9 @@
           <h2>команда веб-редакторов</h2>
           <img src="./img/office.png" alt="" />
         </section>
+        <section>
+          <img src="./img/holyjs.svg" style="height: 50vh" alt="" />
+        </section>
         <section data-transition="none" data-background-transition="none">
           <h1 style="font-weight: 200" class="r-fit-text">
             <b
@@ -291,10 +294,12 @@ document.addEventListener(&quot;click&quot;, async (event) =&gt; {
         <section data-transition="none">
           <h2>HTMX</h2>
           <p>
-            htmx gives you access to <mark>AJAX, CSS Transitions, WebSockets and
-            Server Sent Events</mark> directly in HTML, using attributes,
-            so you can build modern user interfaces with the simplicity and
-            power of hypertext
+            htmx gives you access to
+            <mark
+              >AJAX, CSS Transitions, WebSockets and Server Sent Events</mark
+            >
+            directly in HTML, using attributes, so you can build modern user
+            interfaces with the simplicity and power of hypertext
           </p>
         </section>
         <section data-transition="none">
@@ -369,9 +374,8 @@ document.addEventListener(&quot;click&quot;, async (event) =&gt; {
 &lt;/form&gt;
           </code></pre>
         </section>
-        <section>
-          Demo на простых HTML
-        </section>
+        <section data-background-video="./img/simple.mov"></section>
+        <section data-background-video="./img/simple_demo.mov"></section>
         <section>
           <h2>Ajax или hx-{get,post,put,delete}</h2>
           <pre><code data-trim>
@@ -387,24 +391,37 @@ document.addEventListener(&quot;click&quot;, async (event) =&gt; {
           </code></pre>
         </section>
         <section>
-          Пример с навигацией
+          <h2>Lazy loading</h2>
         </section>
         <section>
-          <h2>
-          Lazy loading
-          </h2>
+          <pre><code data-trim>
+&lt;div hx-get=&quot;/graph&quot; hx-trigger=&quot;load&quot;&gt;
+  &lt;img  alt=&quot;Result loading...&quot; class=&quot;htmx-indicator&quot; width=&quot;150&quot; src=&quot;/img/bars.svg&quot;/&gt;
+&lt;/div&gt;
+          </code></pre>
+          <pre><code data-trim>
+.htmx-settling img {
+  opacity: 0;
+}
+img {
+ transition: opacity 300ms ease-in;
+}
+          </code></pre>
         </section>
-        <section data-transition="none"> 
-          <img src="./img/habr3.png" alt="">
+        <section>
+
         </section>
-        <section data-transition="none"> 
-          <img src="./img/habr4.png" alt="">
+        <section data-transition="none">
+          <img src="./img/habr3.png" alt="" />
         </section>
-        <section data-transition="none"> 
-          <img src="./img/habr5.png" alt="">
+        <section data-transition="none">
+          <img src="./img/habr4.png" alt="" />
         </section>
-        <section data-transition="none"> 
-          <img src="./img/habr6.png" alt="">
+        <section data-transition="none">
+          <img src="./img/habr5.png" alt="" />
+        </section>
+        <section data-transition="none">
+          <img src="./img/habr6.png" alt="" />
         </section>
         <section>
           <h2>Схема загрузки</h2>
@@ -424,9 +441,9 @@ document.addEventListener(&quot;click&quot;, async (event) =&gt; {
         </section>
         <section>
           <h2>Фильтрация списка</h2>
-          <img src="./img/admin.png" alt="">
+          <img src="./img/admin.png" alt="" />
         </section>
-       <section>
+        <section>
           <h2>Фильтрация списка</h2>
           <pre><code data-trim>
 &lt;input id=&quot;search&quot; 
@@ -439,13 +456,26 @@ document.addEventListener(&quot;click&quot;, async (event) =&gt; {
        hx-push-url=&quot;true&quot;/&gt;
           </code></pre>
         </section>
+        <section>Если все-таки нужно динамичнее</section>
         <section>
-          Если все-таки нужно динамичнее
+          <h2>Анимация</h2>
+          <pre><code data-trim>
+&lt;style&gt;
+.fade-me-out.htmx-swapping {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+&lt;/style&gt;
+
+&lt;button class=&quot;fade-me-out&quot;
+        hx-delete=&quot;/fade_out_demo&quot;
+        hx-swap=&quot;outerHTML swap:1s&quot;&gt;
+        Fade Me Out
+&lt;/button&gt;
+          </code></pre>
         </section>
-<section>
-          <h2>
-            Недостатки
-          </h2>
+        <section>
+          <h2>Недостатки</h2>
           <ul>
             <li class="fragment">Для Fullstack</li>
             <li class="fragment">Не для большой команды</li>
@@ -454,9 +484,7 @@ document.addEventListener(&quot;click&quot;, async (event) =&gt; {
           </ul>
         </section>
         <section>
-          <h2>
-            Достоинства
-          </h2>
+          <h2>Достоинства</h2>
           <ul>
             <li class="fragment">Для Fullstack</li>
             <li class="fragment">Не для большой команды</li>
@@ -465,12 +493,15 @@ document.addEventListener(&quot;click&quot;, async (event) =&gt; {
             <li class="fragment">Нет сборки и мало JS</li>
           </ul>
         </section>
-        <section>
-          Выводы
-        </section>
+        <section>Выводы</section>
         <section>
           <h2>Время вопросов</h2>
           <p>Золотых Алексей: @zolotyh</p>
+          <p>
+            Канал с моимы мыслями
+            <a href="https://t.me/budlatbokr">@budlatbokr</a>
+          </p>
+
         </section>
       </div>
     </div>
