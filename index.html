@@ -422,6 +422,56 @@ document.addEventListener(&quot;click&quot;, async (event) =&gt; {
 &lt;/main&gt;
           </code></pre>
         </section>
+        <section>
+          <h2>Фильтрация списка</h2>
+          <img src="./img/admin.png" alt="">
+        </section>
+        <section>
+          <h2>Фильтрация списка</h2>
+          <pre><code data-trim>
+&lt;input id=&quot;search&quot; 
+       type=&quot;search&quot; 
+       name=&quot;q&quot; 
+       value=&quot;{{ request.args.get(&#39;q&#39;) or &#39;&#39; }}&quot;
+       hx-get=&quot;/contacts&quot;
+       hx-trigger=&quot;change, keyup delay:200ms changed&quot;
+       hx-target=&quot;tbody&quot;
+       hx-push-url=&quot;true&quot;/&gt;
+          </code></pre>
+        </section>
+        <section>
+          Если все-таки нужно динамичнее
+        </section>
+<section>
+          <h2>
+            Недостатки
+          </h2>
+          <ul>
+            <li class="fragment">Для Fullstack</li>
+            <li class="fragment">Не для большой команды</li>
+            <li class="fragment">Нет API</li>
+            <li class="fragment">Http Attributes Hell</li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            Достоинства
+          </h2>
+          <ul>
+            <li class="fragment">Для Fullstack</li>
+            <li class="fragment">Не для большой команды</li>
+            <li class="fragment">Супербыстро</li>
+            <li class="fragment">Декларативно</li>
+            <li class="fragment">Нет сборки и мало JS</li>
+          </ul>
+        </section>
+        <section>
+          Выводы
+        </section>
+        <section>
+          <h2>Время вопросов</h2>
+          <p>Золотых Алексей: @zolotyh</p>
+        </section>
       </div>
     </div>
     <img
